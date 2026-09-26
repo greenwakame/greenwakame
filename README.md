@@ -56,52 +56,30 @@ Rebuilding a business system from scratch while experimenting with a practical
 
 ## 🤖 How I Build
 
-```text
-Issue
-  ↓
-Design
-  ↓
-AI Agent
-  ↓
-Human Review
-  ↓
-Verify
-  ↓
-Pull Request
-```
+<p align="center">
+  <img src="./assets/how-i-build.png" alt="How I Build — Issue to Pull Request" width="100%" />
+</p>
 
 > AI can write the code. Humans still own the decisions.
 
 ---
 
-## 🧰 Inventory
+## 🐶 Pug Status
 
-### Languages & Frameworks
-
-<p>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Rust-CE422B?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+<p align="center">
+  <img src="./assets/pug-status.png" alt="Pug Status — Reviewer mode" width="100%" />
 </p>
 
-### Platform & Tools
-
-<p>
-  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+<p align="center">
+  <i>Build. Experiment. Review. Merge. Then give the pug a treat.</i>
 </p>
 
 ---
 
-## 🐕 Pug Approved
+## 🧰 Tech Stack
 
 <p align="center">
-  <i>Build. Experiment. Review. Merge. Then give the pug a treat.</i>
+  <img src="./assets/tech-stack.png" alt="Tech Stack — TypeScript, Next.js, Java, Rust, Docker, Supabase, Vercel, AI Agents, Architecture and ADR" width="100%" />
 </p>
 
 ---
