@@ -79,7 +79,7 @@ Rebuilding a business system from scratch while experimenting with a practical
 ## 🧰 Tech Stack
 
 <p align="center">
-  <img src="./assets/tech-stack.png" alt="Tech Stack — TypeScript, Next.js, Java, Rust, Docker, Supabase, Vercel, AI Agents, Architecture and ADR" width="100%" />
+  <img src="./assets/tech-stack-cloudflare.png" alt="Tech Stack — TypeScript, Next.js, Java, Rust, Cloudflare, Supabase, Vercel, GitHub, AI Agents, Architecture, ADR and Game Dev" width="100%" />
 </p>
 
 ---
