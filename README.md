@@ -109,16 +109,8 @@ Pull Request
 ## 📊 Player Stats
 
 <p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=greenwakame&show_icons=true&theme=github_dark&hide_border=true"
-    height="165"
-    alt="greenwakame GitHub stats"
-  />
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=greenwakame&layout=compact&theme=github_dark&hide_border=true"
-    height="165"
-    alt="greenwakame top languages"
-  />
+  <img src="./profile/stats.svg" height="165" alt="greenwakame GitHub stats" />
+  <img src="./profile/top-langs.svg" height="165" alt="greenwakame top languages" />
 </p>
 
 <p align="center">
@@ -133,13 +125,8 @@ Pull Request
 ## 📈 Activity
 
 <p align="center">
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=greenwakame&bg_color=0d1117&color=7CFC98&line=8b5cf6&point=ffffff&hide_border=true"
-    alt="greenwakame activity graph"
-  />
+  <sub>Contribution activity — pug approved 🐶</sub>
 </p>
-
----
 
 ## 🐍 Contribution Snake
 
