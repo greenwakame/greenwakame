@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./header(1).png" alt="greenwakame — AI-first Software Engineer with pug companion" width="100%" />
+  <img src="./header.png" alt="greenwakame — AI-first Software Engineer with pug companion" width="100%" />
 </p>
 
 <p align="center">
