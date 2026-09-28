@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<article class="work-page page-wrap">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}">Home</a><span aria-hidden="true">/</span>
+    <a href="{{ '/works/' | relative_url }}">Works</a><span aria-hidden="true">/</span>
+    <span aria-current="page">{{ page.title | escape }}</span>
+  </nav>
+
+  <header class="work-header">
+    <div class="section-kicker"><span class="signal-dot" aria-hidden="true"></span> WORK FILE / {{ page.category | upcase | escape }}</div>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="work-lede">{{ page.description | escape }}</p>
+    <div class="work-meta">
+      <span><span class="meta-label">RELEASED</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%b %Y' }}</time></span>
+      {% if page.duration %}<span><span class="meta-label">RUNTIME</span> {{ page.duration | escape }}</span>{% endif %}
+      <span><span class="meta-label">STATUS</span> {{ page.status | escape }}</span>
+    </div>
+  </header>
+
+  {% if page.media.type == 'video' %}
+  <div class="work-video-frame">
+    <video controls playsinline muted preload="none" poster="{{ page.thumbnail | relative_url }}" width="1920" height="1080" aria-label="{{ page.title | escape }} video">
+      <source src="{{ page.media.src | relative_url }}" type="video/mp4">
+      Your browser does not support video playback. <a href="{{ page.media.src | relative_url }}">Download the MP4</a>.
+    </video>
+  </div>
+  {% elsif page.media.type == 'image' %}
+  <figure class="work-video-frame"><img src="{{ page.media.src | relative_url }}" alt="{{ page.media.alt | escape }}" width="1280" height="720"></figure>
+  {% endif %}
+
+  <div class="work-body-grid">
+    <div class="work-story prose">{{ content }}</div>
+    <aside class="work-sidebar" aria-label="Project information">
+      <div class="sidebar-block">
+        <span class="sidebar-label">CATEGORY</span>
+        <strong>{{ page.category | escape }}</strong>
+      </div>
+      <div class="sidebar-block">
+        <span class="sidebar-label">TECH / TOOLS</span>
+        <ul class="tag-list" aria-label="Technologies">
+          {% for tag in page.tags %}<li>{{ tag | escape }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% if page.github or page.demo or page.related_links %}
+      <div class="sidebar-block">
+        <span class="sidebar-label">LINKS</span>
+        <ul class="related-list">
+          {% if page.github %}<li><a href="{{ page.github }}">GitHub <span aria-hidden="true">↗</span></a></li>{% endif %}
+          {% if page.demo %}<li><a href="{{ page.demo }}">Live demo <span aria-hidden="true">↗</span></a></li>{% endif %}
+          {% for link in page.related_links %}<li><a href="{{ link.url }}">{{ link.label | escape }} <span aria-hidden="true">↗</span></a></li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </aside>
+  </div>
+
+  <div class="back-to-works"><a class="text-link" href="{{ '/works/' | relative_url }}"><span aria-hidden="true">←</span> Back to all works</a></div>
+</article>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="13" fill="#081318"/>
+  <path d="M8 8h11M8 8v11M56 8H45M56 8v11M8 56h11M8 56V45M56 56H45M56 56V45" fill="none" stroke="#76ffbc" stroke-width="3"/>
+  <text x="32" y="41" fill="#d9ffee" font-family="monospace" font-size="25" font-weight="700" text-anchor="middle">gw</text>
+</svg>

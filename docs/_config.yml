@@ -1,0 +1,21 @@
+title: Greenwakame Lab
+description: A growing archive of work at the intersection of AI, engineering, experiments, and visual craft.
+url: https://greenwakame.github.io
+baseurl: /greenwakame
+markdown: kramdown
+future: true
+
+collections:
+  works:
+    output: true
+    permalink: /works/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: works
+    values:
+      layout: work
+
+exclude:
+  - README.md

@@ -1,0 +1,16 @@
+<article class="work-card">
+  <a class="work-card-link" href="{{ include.work.url | relative_url }}" aria-label="View {{ include.work.title | escape }}">
+    <div class="work-card-image">
+      <img src="{{ include.work.thumbnail | relative_url }}" alt="{{ include.work.thumbnail_alt | escape }}" width="1280" height="720" loading="lazy" decoding="async">
+      <span class="image-corner image-corner-top" aria-hidden="true"></span>
+      <span class="image-corner image-corner-bottom" aria-hidden="true"></span>
+      <span class="work-card-open" aria-hidden="true">VIEW FILE ↗</span>
+    </div>
+    <div class="work-card-content">
+      <div class="card-overline"><span>{{ include.work.category | upcase | escape }}</span><span>{{ include.work.date | date: '%Y' }}</span></div>
+      <h3>{{ include.work.title | escape }}</h3>
+      <p>{{ include.work.description | escape }}</p>
+      <div class="card-bottom"><span>{{ include.work.status | upcase | escape }}</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+    </div>
+  </a>
+</article>
