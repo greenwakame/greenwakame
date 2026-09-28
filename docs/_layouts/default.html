@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080f13">
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <title>{% if page.title == 'Home' %}{{ site.title }} — AI × Engineering × Experiment{% else %}{{ page.title | escape }} · {{ site.title }}{% endif %}</title>
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title | default: site.title | escape }} · {{ site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    {% if page.thumbnail %}<meta property="og:image" content="{{ page.thumbnail | absolute_url }}">{% endif %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Greenwakame Lab home">
+          <span class="brand-mark" aria-hidden="true">gw<span class="brand-prompt">_</span></span>
+          <span class="brand-name">GREENWAKAME<span> / LAB</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
+          <a href="{{ '/works/' | relative_url }}"{% if page.url == '/works/' or page.collection == 'works' %} aria-current="page"{% endif %}>Works</a>
+          <a class="nav-github" href="https://github.com/greenwakame" aria-label="Greenwakame on GitHub">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
+
+      <main id="main">{{ content }}</main>
+
+      <footer class="site-footer">
+        <div>
+          <strong>GREENWAKAME LAB</strong>
+          <p>Build. Experiment. Review. Repeat.</p>
+        </div>
+        <div class="footer-right">
+          <a href="{{ '/works/' | relative_url }}">All works <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/greenwakame">GitHub <span aria-hidden="true">↗</span></a>
+          <span>© {{ site.time | date: '%Y' }} greenwakame</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
