@@ -3,9 +3,9 @@ layout: default
 title: Home
 description: Greenwakame Lab — a growing archive of AI, engineering, experiments, and visual work.
 ---
-{% assign all_works = site.works | sort: 'date' | reverse %}
-{% assign featured_work = site.works | where: 'featured', true | sort: 'date' | reverse | first %}
-{% unless featured_work %}{% assign featured_work = all_works | first %}{% endunless %}
+{% assign visible_works = site.works | where_exp: 'work', 'work.listed != false' | sort: 'date' | reverse %}
+{% assign featured_work = visible_works | where: 'featured', true | first %}
+{% unless featured_work %}{% assign featured_work = visible_works | first %}{% endunless %}
 
 <section class="hero page-wrap" aria-labelledby="hero-title">
   <div class="hero-copy">

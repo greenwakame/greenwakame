@@ -4,16 +4,16 @@ title: Works
 description: Explore the projects, experiments, and visual work in Greenwakame Lab.
 permalink: /works/
 ---
-{% assign all_works = site.works | sort: 'date' | reverse %}
+{% assign visible_works = site.works | where_exp: 'work', 'work.listed != false' | sort: 'date' | reverse %}
 <section class="archive-hero page-wrap" aria-labelledby="archive-title">
-  <p class="section-kicker"><span class="signal-dot" aria-hidden="true"></span> THE ARCHIVE / {{ all_works.size }} {% if all_works.size == 1 %}FILE{% else %}FILES{% endif %}</p>
+  <p class="section-kicker"><span class="signal-dot" aria-hidden="true"></span> THE ARCHIVE / {{ visible_works.size }} {% if visible_works.size == 1 %}FILE{% else %}FILES{% endif %}</p>
   <h1 id="archive-title">SELECTED<br><span>WORKS<span class="hero-period">.</span></span></h1>
   <div class="archive-intro"><p>Things built, animated, tested, and shipped. Every file has a story behind it.</p><span aria-hidden="true">↓ SCROLL TO EXPLORE</span></div>
 </section>
 
 <section class="archive-list page-wrap" aria-label="Works">
-  <div class="archive-list-head"><span>ALL WORKS</span><span>{{ all_works.size }} TOTAL</span></div>
-  <div class="work-grid{% if all_works.size == 1 %} work-grid-single{% endif %}">
-    {% for work in all_works %}{% include work-card.html work=work %}{% endfor %}
+  <div class="archive-list-head"><span>ALL WORKS</span><span>{{ visible_works.size }} TOTAL</span></div>
+  <div class="work-grid{% if visible_works.size == 1 %} work-grid-single{% endif %}">
+    {% for work in visible_works %}{% include work-card.html work=work %}{% endfor %}
   </div>
 </section>
