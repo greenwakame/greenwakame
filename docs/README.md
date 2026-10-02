@@ -15,6 +15,11 @@ repository root is separate.
    `media.type: image`, `media.src`, and `media.alt`.
 4. Give the file a stable `slug`; it becomes `/works/<slug>/`. Set `featured:
    true` only for work that should be eligible for the Home feature.
+   Set `kind: website` or `kind: video` and add a short `description_ja` so the
+   type and destination are clear to Japanese readers.
+   For a site with an associated film, set `site_url` and `related_video` to
+   the site's URL and the film's Showcase work URL. A video hosted by another
+   site can use `media.external: true` with its absolute MP4 URL.
 5. Preview the Home page, `/works/`, and the new detail page at desktop and
    mobile widths. The two lists and detail page come from the same work file.
 

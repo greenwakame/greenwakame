@@ -4,6 +4,8 @@ slug: hyperframes-lab
 description: AI-assisted motion design case studies and practical knowledge.
 date: 2026-09-29
 category: Motion / Research
+kind: website
+description_ja: 完成映像、制作事例、動きの設計、実践ノートをまとめた専門サイト。
 tags:
   - HyperFrames
   - Motion Design
@@ -16,10 +18,12 @@ media:
   alt: HyperFrames Lab の Case Studies、Knowledge、Examples を紹介するダークテーマのサイトプレビュー
 featured: true
 status: Active
+site_url: https://greenwakame.github.io/hyperframes-lab/
+related_video: /works/hyperframes-profile-pv/
 related_links:
-  - label: Visit HyperFrames Lab
+  - label: HyperFrames Lab を開く
     url: https://greenwakame.github.io/hyperframes-lab/
-  - label: GitHub Repository
+  - label: GitHub リポジトリ
     url: https://github.com/greenwakame/hyperframes-lab
 ---
 

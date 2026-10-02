@@ -24,9 +24,9 @@
           <span class="brand-name">GREENWAKAME<span> / LAB</span></span>
         </a>
         <nav class="site-nav" aria-label="Main navigation">
-          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
-          <a href="{{ '/works/' | relative_url }}"{% if page.url == '/works/' or page.collection == 'works' %} aria-current="page"{% endif %}>Works</a>
-          <a class="nav-github" href="https://github.com/greenwakame" aria-label="Greenwakame on GitHub">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home<small lang="ja">トップ</small></a>
+          <a href="{{ '/works/' | relative_url }}"{% if page.url == '/works/' or page.collection == 'works' %} aria-current="page"{% endif %}>Works<small lang="ja">成果物</small></a>
+          <a class="nav-github" href="https://github.com/greenwakame" aria-label="Greenwakame on GitHub">GitHub <small lang="ja">プロフィール</small><span aria-hidden="true">↗</span></a>
         </nav>
       </header>
 

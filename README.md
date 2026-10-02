@@ -26,6 +26,8 @@ Hi, I'm **greenwakame**.
 I enjoy building software with an **AI-first development style**:
 AI agents help implement, while humans stay responsible for design, review, and verification.
 
+**Explore / 成果物を見る:** [Showcase・作品一覧](https://greenwakame.github.io/greenwakame/) · [HyperFrames Lab・映像と制作記録](https://greenwakame.github.io/hyperframes-lab/) · [20秒のプロフィール映像](https://greenwakame.github.io/hyperframes-lab/cases/greenwakame-profile-pv/#film-heading)
+
 - 🤖 AI coding agents
 - 🏗 Software architecture
 - 📝 ADR-driven development
