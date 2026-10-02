@@ -12,22 +12,30 @@ layout: default
     <div class="section-kicker"><span class="signal-dot" aria-hidden="true"></span> WORK FILE / {{ page.category | upcase | escape }}</div>
     <h1>{{ page.title | escape }}</h1>
     <p class="work-lede">{{ page.description | escape }}</p>
+    {% if page.description_ja %}<p class="work-lede-ja" lang="ja">{{ page.description_ja | escape }}</p>{% endif %}
     <div class="work-meta">
       <span><span class="meta-label">RELEASED</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%b %Y' }}</time></span>
       {% if page.duration %}<span><span class="meta-label">RUNTIME</span> {{ page.duration | escape }}</span>{% endif %}
       <span><span class="meta-label">STATUS</span> {{ page.status | escape }}</span>
     </div>
+    {% if page.site_url or page.related_video %}
+    <div class="work-actions">
+      {% if page.site_url %}<a class="button button-primary" href="{{ page.site_url }}"><span>Visit site<small lang="ja">サイトを開く</small></span><span aria-hidden="true">↗</span></a>{% endif %}
+      {% if page.related_video %}<a class="button button-outline" href="{{ page.related_video | relative_url }}"><span>Watch the film<small lang="ja">完成映像を見る</small></span><span aria-hidden="true">▶</span></a>{% endif %}
+    </div>
+    {% endif %}
   </header>
 
   {% if page.media.type == 'video' %}
+  <div class="work-media-heading"><strong>THE FINAL CUT <span lang="ja">/ 完成映像</span></strong><span lang="ja">{% if page.duration %}{{ page.duration }}{% endif %}{% if page.media.audio_free %}・音声なし{% endif %}。再生ボタンからご覧ください。</span></div>
   <div class="work-video-frame">
-    <video controls playsinline muted preload="none" poster="{{ page.thumbnail | relative_url }}" width="1920" height="1080" aria-label="{{ page.title | escape }} video">
-      <source src="{{ page.media.src | relative_url }}" type="video/mp4">
-      Your browser does not support video playback. <a href="{{ page.media.src | relative_url }}">Download the MP4</a>.
+    <video controls playsinline preload="none" poster="{{ page.thumbnail | relative_url }}" width="1920" height="1080" aria-label="{{ page.title | escape }} の完成映像">
+      {% if page.media.external %}<source src="{{ page.media.src }}" type="video/mp4">{% else %}<source src="{{ page.media.src | relative_url }}" type="video/mp4">{% endif %}
+      Your browser does not support video playback.
     </video>
   </div>
   {% elsif page.media.type == 'image' %}
-  <figure class="work-video-frame"><img src="{{ page.media.src | relative_url }}" alt="{{ page.media.alt | escape }}" width="1280" height="720"></figure>
+  <figure class="work-video-frame work-image-frame"><img src="{{ page.media.src | relative_url }}" alt="{{ page.media.alt | escape }}" width="1280" height="720"><figcaption lang="ja">サイトのプレビュー画像（静止画）</figcaption></figure>
   {% endif %}
 
   <div class="work-body-grid">
