@@ -11,19 +11,19 @@ tags:
   - Motion Design
   - Case Studies
 thumbnail: /assets/works/hyperframes-lab/poster.webp
-thumbnail_alt: HyperFrames Lab の Case Studies、Knowledge、Examples を紹介するダークテーマのサイトプレビュー
+thumbnail_alt: HyperFrames LabのCase Studies、Knowledge、Examplesを紹介するダークテーマのサイトプレビュー
 media:
   type: image
   src: /assets/works/hyperframes-lab/poster.webp
-  alt: HyperFrames Lab の Case Studies、Knowledge、Examples を紹介するダークテーマのサイトプレビュー
+  alt: HyperFrames LabのCase Studies、Knowledge、Examplesを紹介するダークテーマのサイトプレビュー
 featured: true
 status: Active
 site_url: https://greenwakame.github.io/hyperframes-lab/
 related_video: /works/hyperframes-profile-pv/
 related_links:
-  - label: HyperFrames Lab を開く
+  - label: HyperFrames Labを開く
     url: https://greenwakame.github.io/hyperframes-lab/
-  - label: GitHub リポジトリ
+  - label: GitHubリポジトリ
     url: https://github.com/greenwakame/hyperframes-lab
 ---
 

@@ -24,7 +24,7 @@ status: Complete
 related_links:
   - label: 制作事例を読む
     url: https://greenwakame.github.io/hyperframes-lab/cases/greenwakame-profile-pv/
-  - label: HyperFrames Lab を開く
+  - label: HyperFrames Labを開く
     url: https://greenwakame.github.io/hyperframes-lab/
 ---
 
