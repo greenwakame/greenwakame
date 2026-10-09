@@ -2,7 +2,7 @@
 title: Wan Animate 2 — Apple Silicon Lab
 slug: wan-animate2-apple-silicon-lab
 description: A field report on local Wan Animate 2 experiments with Apple M5, ComfyUI, and MPS.
-description_ja: 32GBのMacBook Airでローカル動画生成を検証。技術的な完走と、キャラクターの一貫性に残る課題を記録しました。
+description_ja: 32GBのMacBook Airでローカル動画生成を検証。動画を書き出せたことと、キャラクターの一貫性に残る課題を記録しました。
 date: 2026-10-10
 category: Local AI / Research
 kind: website
@@ -57,4 +57,4 @@ V4 passed historical workflow static/UI validation but remains **UNRUN**. The pu
 
 [Explore the field report](https://greenwakame.github.io/wan-animate2-apple-silicon-lab/) for the evidence, caveats, and experiment lineage. [Browse the GitHub source](https://github.com/greenwakame/wan-animate2-apple-silicon-lab) for the public records and templates.
 
-<p lang="ja">詳しい検証記録は専門サイトへ。非公開のキャラクター画像・動画は使用していません。</p>
+<p lang="ja">詳しい検証記録は専門サイトでご覧ください。非公開のキャラクター画像・動画は使用していません。</p>

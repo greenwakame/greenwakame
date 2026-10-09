@@ -27,7 +27,7 @@ layout: default
   </header>
 
   {% if page.media.type == 'video' %}
-  <div class="work-media-heading"><strong>THE FINAL CUT <span lang="ja">/ 完成映像</span></strong><span lang="ja">{% if page.duration %}{{ page.duration }}{% endif %}{% if page.media.audio_free %}・音声なし{% endif %}。再生ボタンからご覧ください。</span></div>
+  <div class="work-media-heading"><strong>THE FINAL CUT <span lang="ja">/ 完成映像</span></strong><span lang="ja">{% if page.duration %}{{ page.duration }}{% endif %}{% if page.media.audio_free %}・音声なし{% endif %}。再生ボタンを押してご覧ください。</span></div>
   <div class="work-video-frame">
     <video controls playsinline preload="none" poster="{{ page.thumbnail | relative_url }}" width="1920" height="1080" aria-label="{{ page.title | escape }}の完成映像">
       {% if page.media.external %}<source src="{{ page.media.src }}" type="video/mp4">{% else %}<source src="{{ page.media.src | relative_url }}" type="video/mp4">{% endif %}
