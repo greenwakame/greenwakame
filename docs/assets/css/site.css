@@ -310,6 +310,10 @@ button, input { font: inherit; }
   .footer-right > span { text-align: left; }
 }
 
+@media (max-width: 390px) {
+  .work-header h1 { font-size: clamp(2.75rem, 14vw, 3.4rem); }
+}
+
 @media (max-width: 360px) {
   .archive-hero h1 { font-size: clamp(3.75rem, 19vw, 4.2rem); }
 }
